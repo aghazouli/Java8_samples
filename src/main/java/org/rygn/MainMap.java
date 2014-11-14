@@ -13,10 +13,10 @@ public class MainMap extends AbstractMainStream {
 			stringCollection
 				.stream()
 				.map(
-					(a) -> a.toUpperCase()
-				)
+					a -> a.length()
+				)				
 				.forEach(
-					(a) -> System.out.println("Found : " + a)
+					a -> System.out.println("Size : " + a)
 				);
 		}
 		catch(Exception e) {

@@ -15,11 +15,11 @@ public class MainCount extends AbstractMainStream {
 			
 			Long count = myStream
 								.filter(
-									(a) -> a.startsWith("a")
+									a -> a.length() >= 5
 								)
 								.count();
 			
-			System.out.println("Nbr starting with a : " + count);
+			System.out.println("Nbr with size >= 5 : " + count);
 		}
 		catch(Exception e) {
 			e.printStackTrace();

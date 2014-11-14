@@ -13,10 +13,10 @@ public class MainFilter extends AbstractMainStream {
 			stringCollection
 				.stream()
 				.filter(
-					(a) -> a.startsWith("a")
+					s -> s.startsWith("a")
 				)
 				.forEach(
-					(a) -> System.out.println("Found : " + a)
+					s -> System.out.println("Found : " + s)
 				);
 		}
 		catch(Exception e) {

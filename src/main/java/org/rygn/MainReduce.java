@@ -15,7 +15,7 @@ public class MainReduce extends AbstractMainStream {
 													.stream()
 													.sorted()
 													.map(
-														(a) -> a.toUpperCase()
+														a-> a.toUpperCase()
 													)
 													.reduce(
 														(a, b) -> a + "#" + b

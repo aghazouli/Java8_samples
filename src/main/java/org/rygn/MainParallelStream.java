@@ -12,7 +12,7 @@ public class MainParallelStream {
 	public static void main(String[] args) {
 		
 		// init a big list of strings
-		int max = 1000000;
+		int max = 5000000;
 		
 		List<String> values = new ArrayList<>(max);
 		

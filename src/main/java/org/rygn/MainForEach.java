@@ -16,12 +16,12 @@ public class MainForEach extends AbstractMainStream {
 				System.out.println(s);
 			}
 			*/
-			
+
 			
 			stringCollection
 				.stream()
 				.forEach(
-					(a) -> System.out.println("Found : " + a)
+					param -> System.out.println("Found : " + param)
 				);
 			
 		}

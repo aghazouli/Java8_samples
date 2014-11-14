@@ -13,7 +13,7 @@ public class MainMatch extends AbstractMainStream {
 			Boolean anyMatchResult = stringCollection
 										.stream()
 										.anyMatch(
-											(a) -> a.startsWith("a")
+											a -> a.startsWith("a")
 										);
 			
 			System.out.println("AnyMatchResult : " + anyMatchResult);
@@ -22,7 +22,7 @@ public class MainMatch extends AbstractMainStream {
 			Boolean allMatchResult = stringCollection
 					.stream()
 					.allMatch(
-						(a) -> a.startsWith("a")
+						a -> a.startsWith("a")
 					);
 
 			System.out.println("AllMatchResult : " + allMatchResult);
@@ -31,7 +31,7 @@ public class MainMatch extends AbstractMainStream {
 			Boolean noneMatchResult = stringCollection
 					.stream()
 					.noneMatch(
-						(a) -> a.startsWith("a")
+						a -> a.startsWith("a")
 					);
 
 			System.out.println("NoneMatchResult : " + noneMatchResult);
