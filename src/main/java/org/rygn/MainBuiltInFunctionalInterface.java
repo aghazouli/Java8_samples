@@ -12,15 +12,6 @@ public class MainBuiltInFunctionalInterface {
 
 	public static void main(String[] args) {
 		
-		Predicate<String> predicate1 = (s -> s.length() > 0);
-		System.out.println("predicate1.test(\"foo\") : " + predicate1.test("foo"));
-		
-		Predicate<String> predicate2 = (s -> s.length() > 10);
-		System.out.println("predicate2.test(\"foo\") : " + predicate2.test("foo"));
-		
-		Function<String, Integer> toInteger = Integer::valueOf;
-		System.out.println("toInteger.apply(\"123\") : " + toInteger.apply("123"));
-		
 		Supplier<Person> personSupplier = Person::new;
 		Person p = personSupplier.get();
 		System.out.println("Person supplied : " + p);
