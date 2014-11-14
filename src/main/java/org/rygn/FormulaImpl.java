@@ -2,7 +2,6 @@ package org.rygn;
 
 public class FormulaImpl implements Formula {
 
-	@Override
 	public double calculate(int a) {
 		
 		return this.sqrt(a * 100);
